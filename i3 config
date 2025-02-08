@@ -24,6 +24,7 @@ font pango:JetBrains Mono Nerd Font 10
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id setxkbmap -option caps:swapescape
 
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -120,7 +121,7 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-exec_always picom -f
+exec --no-startup-id picom --backend xrender -b -f
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -223,4 +224,4 @@ set $in-text    #969696
 client.focused          $bgcolor        $bgcolor        $text           $indicator
 client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
-client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor 
+c
