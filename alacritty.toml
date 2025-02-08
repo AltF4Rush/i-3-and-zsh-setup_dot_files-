@@ -1,19 +1,25 @@
 # Set the background opacity under the 'window' section
 [window]
-  opacity = 0.5  # Adjust opacity here (0.0 is fully transparent, 1.0 is fully opaque)
+  opacity = 0.75  # Adjust opacity here (0.0 is fully transparent, 1.0 is fully opaque)
+  blur = true
+  title = "terminal"
 
 # Font configurations
+
 [font]
-  normal.family = "JetBrains Mono Nerd Font"
-  normal.style = "Regular"
+size = 9.5
 
-  bold.family = "JetBrains Mono Nerd Font"
-  bold.style = "Bold"
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+style = "Bold"
 
-  italic.family = "JetBrains Mono Nerd Font"
-  italic.style = "Italic"
+[font.bold]
+family = "JetBrains Mono Nerd Font"
+style = "Bold"
 
-  size = 9.5
+[font.italic]
+family = "JetBrains Mono Nerd Font"
+style = "Italic"
 
 
 [keyboard]
@@ -23,33 +29,61 @@ bindings = [
 
 # (Tokyo_night_eh) Colors for Alacritty
 
+# [colors.primary]
+# background = "#08080b"
+# foreground = "#787c99"
+
+# [colors.cursor]
+# cursor = "#787c99"
+
+# [colors.selection]
+# text = "CellForeground"
+# background = "#515c7e"
+
+# [colors.normal]
+# black = "#363b54"
+# red = "#f7768e"
+# green = "#41a6b5"
+# yellow = "#e0af68"
+# blue = "#7aa2f7"
+# magenta = "#bb9af7"
+# cyan = "#7dcfff"
+# white = "#787c99"
+
+# [colors.bright]
+# black = "#363b54"
+# red = "#f7768e"
+# green = "#41a6b5"
+# yellow = "#e0af68"
+# blue = "#7aa2f7"
+# magenta = "#bb9af7"
+# cyan = "#7dcfff"
+# white = "#787c99"
+
+#midnight-haze.toml
+# Default colors
 [colors.primary]
-background = "#08080b"
-foreground = "#787c99"
+background = '#0c0c16'
+foreground = '#d8dee9'
 
-[colors.cursor]
-cursor = "#787c99"
-
-[colors.selection]
-text = "CellForeground"
-background = "#515c7e"
-
+# Normal colors
 [colors.normal]
-black = "#363b54"
-red = "#f7768e"
-green = "#41a6b5"
-yellow = "#e0af68"
-blue = "#7aa2f7"
-magenta = "#bb9af7"
-cyan = "#7dcfff"
-white = "#787c99"
+black   = '#2c2c3d'
+red     = '#ff6e6e'
+green   = '#9ec875'
+yellow  = '#ffa759'
+blue    = '#70a7d4'
+magenta = '#d291e0'
+cyan    = '#96e0e0'
+white   = '#d8dee9'
 
+# Bright colors
 [colors.bright]
-black = "#363b54"
-red = "#f7768e"
-green = "#41a6b5"
-yellow = "#e0af68"
-blue = "#7aa2f7"
-magenta = "#bb9af7"
-cyan = "#7dcfff"
-white = "#787c99"
+black   = '#414166'
+red     = '#ff8d8d'
+green   = '#b3d987'
+yellow  = '#ffc57f'
+blue    = '#9bb3d3'
+magenta = '#ffa1ff'
+cyan    = '#9cd8d8'
+white   = '#ffffff'
