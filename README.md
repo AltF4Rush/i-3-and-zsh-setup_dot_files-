@@ -3,7 +3,7 @@
 I have a habit of **removing everything and reinstalling everything** frequently. This README is to help me **restore my setup quickly** every time I reset my system.
 
 ## **1️⃣ Installation Steps**
-Run the following command to install all necessary packages:
+All necessary packages:
 ```bash
 sudo pacman -S acpi alacritty astyle base base-devel btrfs-progs chafa clang cmake discord fastfetch firefox \
 fuse2 gdb git github-cli grub gst-plugin-pipewire helix htop i3-wm i3blocks i3lock i3status intel-ucode iwd \
@@ -21,17 +21,16 @@ sudo systemctl enable NetworkManager
 ## **3️⃣ Configuring i3 and Zsh**
 
 ### **i3 Setup**
-1. **Install i3 Window Manager** (already included in the package list above)
-2. **Copy i3 config files:**
+1. **Copy i3 config files:**
    ```bash
    mkdir -p ~/.config/i3
    cp -r /path/to/saved/i3/config ~/.config/i3/
    ```
-3. **Set up Nitrogen for Wallpapers:**
+2. **Set up Nitrogen for Wallpapers:**
    ```bash
    nitrogen --restore &
    ```
-4. **Enable Picom for Transparency & Effects:**
+3. **Enable Picom for Transparency & Effects:**
    ```bash
    picom --config ~/.config/picom.conf &
    ```
